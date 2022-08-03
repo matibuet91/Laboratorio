@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav>
+        <img src="imagenes/logo.jpg" alt="logo"> 
+        <a href="index.html">Inicio</a>   
+        <a href="sobreMi.html">Sobre Mí</a>
+        <a href="contacto.html">Contacto</a> 
+        <a href="#">Comprar</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+    </nav>
+    <hr>
+    <form action="">
+        <h1>Contacto</h1>
+        <h5>Ingrese sus datos para poder contactarnos.</h5>
+
+        <label for="">Nombre:</label>        
+        <input  type="text" size="18" name="Nombre" id="Nombre" minlength="0" maxlength="10">
+        <label for="">Apellido:</label>
+        <input  type="text" id="Apellido">
+        <br>
+        <br>
+        <label for="">Email:</label>
+        <input type="email" size="20" name="Email" id="Email">
+        <label for="">Telefono:</label>
+        <input type="tel" id="Telefono">
+        <br><br>
+        <label for="">Password</label>
+        <input type="password" id="pass">
+        <label for="">Mayor de 18</label>
+        <input type="checkbox" id="mayor">
+        <label for="">Buenos Aires</label>
+        <input type="checkbox" id="BA">
+        <br><br>
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" name="" id="fechaNacimiento">
+        <label for="">Codigo Postal</label>
+        <input type="number" name="" id="edad" size="10" min="0" max="5000">
+        <label for="">Campo oculto:</label>
+        <input type="text">
+        <br><br>
+        <label for="">Edad:</label>
+
+        <input type="radio" id="age1" name="age" value="30">
+        <label for="age1">0 - 30</label><br>
+        <input type="radio" id="age2" name="age" value="60">
+        <label for="age2">31 - 60</label><br>  
+        <input type="radio" id="age3" name="age" value="100">
+        <label for="age3">61 - 100</label><br><br>
+
+        <br><br>
+        <label for="">Mensaje:</label>
+        <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="">Cargar archivo</label><br>
+        <input type="file" name="archivo" id="archivo">
+        <label for="">Genero:</label>
+        <select name="" id="genero">
+            <option value="0"></option>
+            <option value="1">Masculino</option>
+            <option value="2">Femenino</option>
+            <option value="3">No binario</option>
+        </select>
+        <br><br>
+        <button type="button">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
